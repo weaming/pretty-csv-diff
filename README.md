@@ -9,7 +9,7 @@ Compare two CSV files for differences. Colorize the differences and align the co
 ## Command-Line Usage
 
 ```
-usage: pretty-csv-diff [-h] path path pk [pk ...]
+usage: pretty-csv-diff [-h] [--less] path path pk [pk ...]
 
 positional arguments:
   path        paths to the two csv files to be compared
@@ -18,4 +18,5 @@ positional arguments:
 
 optional arguments:
   -h, --help  show this help message and exit
+  --less      use less to view output
 ```

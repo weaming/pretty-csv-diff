@@ -1,6 +1,7 @@
 import csv
 import math
 
+
 class PrettyCsvDiff:
     def __init__(self, path, pk):
         self._header = None
@@ -48,7 +49,6 @@ class PrettyCsvDiff:
             return sgr + row[k] + padding + (RESET if sgr else '')
 
         return (prefix,) + tuple(colorize(k) for k in range(len(row)))
-
 
     def do(self):
         yield self._formatted(' ', self._header)
